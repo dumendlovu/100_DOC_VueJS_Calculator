@@ -1,0 +1,12 @@
+Day 1
+https://www.youtube.com/watch?v=m1_ih43p24s&list=WL&index=14
+The Build Calculator App Tutorial
+#Lessons of the Day
+- A chance to brush up on CSS grid
+- To learn the use of Vue.js and how it all works
+#Realisations
+- I'll probably be done with this in 2 days because
+  $ I'm not going to follow the Tutorial and Leave because
+    *I want to fix some of the bugs
+    * Make some changes to give my own personal flare
+    * Potential improve on some of the design.
