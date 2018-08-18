@@ -10,3 +10,15 @@ The Build Calculator App Tutorial
     *I want to fix some of the bugs
     * Make some changes to give my own personal flare
     * Potential improve on some of the design.
+
+Day 2
+# So finished tutorial now working on bugs some i found
+  - plus and minus button doesn't react to answers might need to check on that
+  - when you press 0 then another number the zero is still there so need some looking into
+
+# stuff on the plate to try and do:
+  - some UX design
+  - UI/ CSS playing around for flare.
+
+05. Neon Tones and Sharp Contrast
+https://www.canva.com/learn/website-color-schemes/

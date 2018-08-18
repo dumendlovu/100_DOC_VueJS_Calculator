@@ -1,7 +1,10 @@
 var app = new Vue({
   el:'#appCalculator',
   data:{
-    current: '1234',
+    prev: null,
+    current: '',
+    operator: null,
+    operatiorClick: false,
   },
   methods:{
     clear(){
@@ -15,12 +18,42 @@ var app = new Vue({
       this.current = parseFloat(this.current) / 100;
     },
     append(number){
-      this.current = this.current+number;
+      if(this.operatiorClick){
+        this.current = "";
+        this.operatiorClick = false;
+      }
+        this.current = this.current +number;
     },
     dot(){
       if (this.current.indexOf('.') ===  -1){
         this.append('.')
       }
+    },
+    setPrev(){
+      this.prev = this.current;
+      this.operatiorClick = true;
+    },
+    divide(){
+      this.operator = (a, b) => a/b;
+      this.setPrev();
+    },
+    times(){
+      this.operator = (a, b) => a*b;
+      this.setPrev();
+    },
+    minus(){
+      this.operator = (a, b) => a-b;
+      this.setPrev();
+    },
+    plus(){
+      this.operator = (a, b) => a+b;
+      this.setPrev();
+    },
+    equal(){
+      this.current = this.operator(
+        parseFloat(this.current),
+        parseFloat(this.prev));
+      this.prev = null;
     }
   }
 });
